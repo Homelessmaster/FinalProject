@@ -11,7 +11,7 @@
 
 
 
-void ChangeArray(string[] array, int n)
+void ChangeArray(string[] array)
 {
     int a = 0;
     int b = 0;
@@ -44,4 +44,4 @@ int n = Convert.ToInt32(Console.ReadLine());
 string[] array = new string[n];
 
 InputArray(array);
-ChangeArray(array, n);
+ChangeArray(array);
