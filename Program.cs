@@ -15,15 +15,15 @@ void ChangeArray(string[] array, int n)
 {
     int a = 0;
     int b = 0;
-    string[] result = new string[n - a];
 
 
     for (int j = 0; j < array.Length; j++)
     {
-        if(array[j].Length > 3)
+        if(array[j].Length < 4)
             a++;
     }
-
+    
+    string[] result = new string[a];
 
     for (int i = 0; i < array.Length; i++)
     {   
@@ -33,7 +33,7 @@ void ChangeArray(string[] array, int n)
             b++;
         }
     }
-    Console.WriteLine($"[{string.Join(" ", result)}]");
+    Console.WriteLine($"[{string.Join(", ", result)}]");
 }
 
 
